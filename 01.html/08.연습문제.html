@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+</head>
+<body>
+     
+      
+</style>
+    <form action="test.do">
+        <fieldset>
+            <legend>필수항목</legend>
+        ID : &emsp;<input type="text" placeholder="아이디 입력" name="id" maxlength="12" required> <br><br>
+        PW :  &ensp;<input type="password" placeholder="비밀번호 입력" name="pw" required> <br><br>
+        이름 : <input type="text" name="name" placeholder="이름 입력" required>
+    </fieldset>
+    <fieldset>
+        <legend>선택항목</legend>
+        전화번호 : <input type="tel" placeholder="전화번호 입력"> <br>
+        주소 : <br>
+        성별 : 
+        <input type="radio" name="gender" value="M"> 남자 &emsp; 
+        <input type="radio" name="gender" value="F"> 여자 &emsp; <br> 
+        자기소개 : <textarea name="content" cols="35" rows="10"></textarea>
+    </fieldset>
+    <input type="submit"> <input type="reset" name="reset" value="초기화">
+    <br><br>
+
+    <label> <input type="checkbox">제출에 동의</label>
+    </form>
+    
+</body>
+</html>
