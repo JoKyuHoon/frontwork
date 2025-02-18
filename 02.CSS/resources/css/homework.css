@@ -1,30 +1,53 @@
-
-
-/* 공통 스타일 */
 .content {
     position: relative;
-    animation: fade_up 1s ease-in-out;
-    background: #caa2c4;
-    color: white;
+    animation: fade_up 1s forwards;  /* 'forwards' 추가 */
+    background-color: #e7d4e4;
+    border-radius: 8px;
     padding: 20px;
-    text-align: center;
-    width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-width: 200px;
     margin: 20px auto;
-    border-radius: 10px;
-    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0; /* 처음에는 보이지 않도록 설정 */
+    
+
+    
 }
 
-/* 애니메이션 딜레이 추가 */
-.content1 { animation-delay: 0s; }
-.content2 { animation-delay: 0.5s; }
-.content3 { animation-delay: 1s; }
+.box1 {
+    background-color: #af62be;  /* 첫 번째 박스의 배경색 */
+    animation-delay: 0s;  /* 첫 번째 박스는 바로 나타남 */
+    
+    
+}
 
-/* fade_up 애니메이션 */
+.box2 {
+    background-color: #b57dc9;  /* 두 번째 박스의 배경색 */
+    animation-delay: 0.3s; /* 두 번째 박스는 0.3초 후에 나타남 */
+}
+
+.box3 {
+    background-color: #b79ae2;  /* 세 번째 박스의 배경색 */
+    animation-delay: 0.6s; /* 세 번째 박스는 0.6초 후에 나타남 */
+}
+.box4 {
+    background-color: #b89fe0;  /* 세 번째 박스의 배경색 */
+    animation-delay: 0.9s; /* 세 번째 박스는 0.6초 후에 나타남 */
+}
+
 @keyframes fade_up {
-    0% { opacity: 0; transform: translateY(100%); }
-    to { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translate(-100%); /* 아래에서 올라옴 */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);   /* 원래 위치로 돌아옴 */
+    }
 }
 
-
-
-
+  
