@@ -1,0 +1,96 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-width: 3px;
+}
+
+#test1 {
+    border-style: dotted;
+    border-top-width: 10px;
+}
+
+#test2 {
+    box-shadow: 5px 5px 10px 3px rgb(14, 56, 44);
+}
+
+#test3 {
+    border-style: dashed double solid dotted;
+    border-width: 5px;
+}
+
+#test4 {
+    border-style: dashed;
+    border-left-color: rgb(240, 4, 82);
+}
+
+#test5 {
+    border-style: groove;
+    border-width: 10px;
+}
+
+#test6 {
+    border-style: ridge;
+    border-width: 10px;
+}
+
+#test7 {
+    border-style: inset;
+    border-width: 10px;
+}
+
+#test8 {
+    border-style: outset;
+    border-width: 10px;
+}
+
+#test9 {
+    border-style: solid;
+    border-radius: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+#test10 {
+    border: 10px dotted darkblue;
+}
+
+#btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(101, 150, 179);
+
+}
+
+#reset {
+    margin-left: 100px;
+    border: none;
+    padding: 11px 20px;
+    background-color: rgb(101, 150, 179);
+
+}
+
+#btn:hover {
+    background-color: rgb(114, 114, 230);
+}
+
+
+input[name^=user]:focus {
+    background-color: rgb(216, 237, 238);
+}
+
+
+#lorem {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 10px 20px 30px;
+
+}
+#reset:hover {
+    background-color: rgb(114, 114, 230);
+
+
+}

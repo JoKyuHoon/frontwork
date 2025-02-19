@@ -4,7 +4,7 @@
     background-color: #e7d4e4;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgb(187, 97, 182, 0.7);
     border: 1px solid #ddd;
     max-width: 200px;
     margin: 20px auto;
@@ -14,9 +14,18 @@
     text-align: center;
     opacity: 0; /* 처음에는 보이지 않도록 설정 */
     
-
     
 }
+
+div[class*=box]:hover {
+    background-color: #c029df;
+    color: rgb(104, 7, 131);
+}
+
+div[class*=box]:focus {
+    background-color: white;
+}
+
 
 .box1 {
     background-color: #af62be;  /* 첫 번째 박스의 배경색 */
@@ -39,14 +48,13 @@
     animation-delay: 0.9s; /* 세 번째 박스는 0.6초 후에 나타남 */
 }
 
+
+
+
 @keyframes fade_up {
     0% {
         opacity: 0;
-<<<<<<< HEAD
         transform: translate(-100%); /*  */
-=======
-        transform: translate(-100%); /* 아래에서 올라옴 */
->>>>>>> d724c90175c064b5e248a6fc9646cffb9d31704b
     }
     100% {
         opacity: 1;
