@@ -42,7 +42,11 @@
 @keyframes fade_up {
     0% {
         opacity: 0;
+<<<<<<< HEAD
         transform: translate(-100%); /*  */
+=======
+        transform: translate(-100%); /* 아래에서 올라옴 */
+>>>>>>> d724c90175c064b5e248a6fc9646cffb9d31704b
     }
     100% {
         opacity: 1;
