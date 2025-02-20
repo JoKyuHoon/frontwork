@@ -1,0 +1,21 @@
+* {
+    margin: 0 auto;
+    font-family: "Gugi", serif;
+    font-weight: lighter;
+    
+    
+}
+
+header {
+    background-color: rgb(218, 150, 198);
+    text-align: center;
+}
+header>h1 {
+    color: white;
+}
+footer {
+    background-color: rgb(218, 150, 198);
+    text-align: center;
+    color: white;
+
+}

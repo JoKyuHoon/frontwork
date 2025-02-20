@@ -12,14 +12,22 @@
     font-size: 16px;
     color: #ffffff;
     text-align: center;
-    opacity: 0; /* 처음에는 보이지 않도록 설정 */
+    opacity: 0;  /* 처음에는 보이지 않도록 설정 */
+
+    transition-property: all;
+    transition-duration: 0.5s;
     
     
+}
+.contentbox1:hover {
+    width: 200px;
 }
 
 div[class*=box]:hover {
     background-color: #c029df;
     color: rgb(104, 7, 131);
+    
+    
 }
 
 div[class*=box]:focus {
@@ -61,5 +69,6 @@ div[class*=box]:focus {
         transform: translate(0);   /* 원래 위치로 돌아옴 */
     }
 }
+
 
   
