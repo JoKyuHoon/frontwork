@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/css/00.common.css">
-    <link rel="stylesheet" href="resources/css/01.pc.css" @media="screen and (min-width1000px)">
-    <link rel="stylesheet" href="resources/css/02.tablet.css" @media="screen and (min-width600px)">
-    <link rel="stylesheet" href="resources/css/03.mobile.css" @media="screen and (max-width600px)">
-
-
+    <link href="resources/css/01.common.css" rel="stylesheet">
+    <link href="resources/css/02.pc.css" rel="stylesheet" 
+        media="screen and (min-width:1000px)">
+    <link href="resources/css/03.tablet.css" rel="stylesheet"
+        media="screen and (min-width:601px) and (max-width:999px)">
+    <link href="resources/css/04.mobile.css" rel="stylesheet"
+        media="screen and (max-width:600px)">
     <title>tjoeun</title>
 </head>
 <body>
     <header>
         <img src="https://www.tjoeun.co.kr/images/head_mcl_logo.jpg?v=20190918" alt="tjoeun 로고" id="logo">
         <form action="login.do" id="login">
-            아이디 : <input name="id" size="15">&emsp; 
-            비밀번호 : <input type="password" name="pw" size="15">
+            id <input name="id" size="15" class="userid">&emsp; 
+            pw <input type="password" name="pw" size="15" class="userpw">
             <input type="submit" value="로그인">
         </form>
-        <img src="resources/img/i3.jpg" id="titleImg">
+        <img src="resources/img/i1.jpg" id="titleImg">
     </header>
     <nav class="navi">
         <a href="#">교육원소개</a>
@@ -47,10 +48,9 @@
         </article>
     </section>
     <aside>
-        
         <img src="resources/img/i1.jpg" alt="img1">
-        <img src="resources/img/i2.jpg" alt="img2">
-        <img src="resources/img/i4.png" alt="img3">
+        <img src="resources/img/i1.jpg" alt="img2">
+        <img src="resources/img/i1.jpg" alt="img3">
     </aside>
     <footer>
         <span>더조은컴퓨터아카데미</span><br>
@@ -58,9 +58,5 @@
         <span>사업자등록번호 864-85-00997|통신판매업신고번호 2018-서울서초-2615 | 마케팅제휴 : partner@tjoeun.co.kr</span><br>
         <p>ⓒ THEJOEUN ACADEMY Corp.</p>
     </footer>
-
-
-
-
 </body>
 </html>
