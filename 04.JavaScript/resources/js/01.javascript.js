@@ -1,3 +1,3 @@
-function test() {
-    window.alert('별도로 작성된 js');
+function text() {
+    alert("버튼 클릭!");
 }

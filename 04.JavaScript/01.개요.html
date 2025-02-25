@@ -68,6 +68,8 @@
     <button onclick="window.alert('!!')">알림창 출력</button>
     <button onclick="console.log('콘솔출력')">콘솔 출력</button>
 
+
+
     <h4> internal 방식</h4>
     <p>
         html문서 내에 소스코드를 작성하여 실행<br>
@@ -79,20 +81,24 @@
     </p>
     <button id="btn">알림창 출력</button>
     <button onclick="btnClick();">콘솔 출력</button>
-    <script&gt;>
-        // 이벤트를 부여하고자하는 요소를 선택하여 변수에 담아두기
+
+    <script>
+    // 이벤트를 부여하고자 하는 요소를 선택하여 변수에 담아두기
         var btn1 = document.getElementById('btn');
         console.log(btn1);
 
-        // 해당 요소에 클릭이벤트 발생시 실행할 함수(이벤트 핸들러) 정의
+        // 해당 요소에 클릭 이벤트 발생 시 실행할 함수(이벤트 핸들러) 정의
         btn1.onclick = function() {
-            window.alert("버튼클릭!");
+            window.alert("버튼 클릭!");
         };
 
         function btnClick() {
-            console.log("버튼클릭!")
+            console.log("버튼 클릭!");
         }
-    </script>
+</script>
+
+
+
 
 <h4> external 방식</h4>
     <p>

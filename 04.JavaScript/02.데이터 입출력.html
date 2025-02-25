@@ -86,7 +86,7 @@
     <h2>2. 데이터 입력받는 구문(변수에 기록 가능)</h2>
     <p>
         1) 변수 = [window.]confirm("질문내용"); <br>
-        2) 변수 = [wondow.]prompt("질문내용"); <br>
+        2) 변수 = [window.]prompt("질문내용"); <br>
         3) 변수 = 선택한요소.속성(id, className, innerHTML, innerText, ...); <br>
         4) 변수 = 선택한input요소.value;
     </p>
@@ -97,11 +97,11 @@
         확인 버튼 클릭시 true, 취소 버튼 클릭시 false 반환
     </p>
 
-    <button onclick="testConfrim();">클릭</button>
+    <button onclick="testConfirm();">클릭</button>
     <div id="area2"></div>
 
     <script>
-        function testConfrim() {
+        function testConfirm() {
             var result = confirm("자바스크립트가 재밌나요?");
             console.log(result);
 
@@ -120,7 +120,7 @@
         }
     </script>
 
-    <h3>2) [wondow.]prompt("질문내용");</h3>
+    <h3>2) [window.]prompt("질문내용");</h3>
     <p>
         prompt호출시 "질문내용"과 입력할 수 있는 "텍스트상자"와 "확인/취소" 버튼이 보여지는 알림창 발생 <br>
         확인 버튼 클릭시 텍스트상자에 입력된 값이 문자열로 반환<br>
@@ -238,7 +238,7 @@
         <button onclick="Input1()">전송</button> <br><br>
         
 정보 :
-     <input id="info1">
+     <input id="info2">
 
        <script>
         function Input1() {
@@ -250,9 +250,9 @@
 
          document.getElementById("info2").value = nameValue + ', '  + ageValue + ', ' + addressValue;
 
-        document.getElementById("nameInput").value = name1;
-        document.getElementById("ageInput").value = age1;
-        document.getElementById("addressInput").value = address;
+        document.getElementById("nameInput1").value = name2;
+        document.getElementById("ageInput1").value = age2;
+        document.getElementById("addressInput1").value = addres2;
         }
 
        </script>
