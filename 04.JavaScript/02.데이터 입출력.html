@@ -206,7 +206,7 @@
 <hr>
 
 
-    <br><br>
+    <br>
 
 
     <button onclick="Prompt1();">정보입력</button> <!-- "정보" 버튼을 클릭하면 Prompt1 함수가 실행됨-->
@@ -225,36 +225,33 @@
         }
         </script>
       
-        <hr>
-
+    <hr>
 
     <br>
 
-        
-        이름 : <input id="name2"> <br>
-        나이 : <input id="age2"> <br>
-        주소 : <input id="address2">
+    이름 : <input id="name2"> <br>
+    나이 : <input id="age2"> <br>
+    주소 : <input id="address2">
 
-        <button onclick="Input1()">전송</button> <br><br>
+    <button onclick="Input1()">전송</button> <br><br>
         
 정보 :
      <input id="info2">
 
        <script>
         function Input1() {
-         var nameValue = document.getElementById('name2').value;
-         var ageValue = document.getElementById('age2').value;
-         var addressValue = document.getElementById('address2').value;
+            var nameValue = document.getElementById('name2').value;
+            var ageValue = document.getElementById('age2').value;
+            var addressValue = document.getElementById('address2').value;
 
-         var divEl6 = document.getElementById("info1");
+            var divEl6 = document.getElementById("info1");
 
-         document.getElementById("info2").value = nameValue + ', '  + ageValue + ', ' + addressValue;
+            document.getElementById("info2").value = nameValue + ', '  + ageValue + ', ' + addressValue;
 
-        document.getElementById("nameInput1").value = name2;
-        document.getElementById("ageInput1").value = age2;
-        document.getElementById("addressInput1").value = addres2;
+            document.getElementById("nameInput1").value = name2;
+            document.getElementById("ageInput1").value = age2;
+            document.getElementById("addressInput1").value = addres2;
         }
-
        </script>
        <hr>
 
