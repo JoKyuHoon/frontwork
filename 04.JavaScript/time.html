@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="time()">시간</button>
+  <div id="t" class="area"></div>
+
+  <script>
+    function time() {
+        const t = document.getElementById('t');
+
+        // let count = 1;
+        setInterval(function() {
+            // t.innerHTML = count++;
+
+            const now = new Date();
+
+            let hour = now.getHours();
+            let min = now.getMinutes();
+            let sec = now.getSeconds();
+
+            t.innerHTML = `${hour} : ${min} : ${sec}`;
+        },1000) 
+    }
+  </script>
+
+
+
+</body>
+</html>
