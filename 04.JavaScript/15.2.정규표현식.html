@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        
+        table {
+            padding-left: 55px;
+            padding-right: 55px;
+            width: 700px;
+            /* table-layout: fixed; */
+            border: 1px solid black;
+          
+        }
+        
+        td {
+            height: 50px;
+        }
+
+        #bt {
+           display: flex;
+           justify-content: center;
+           
+          
+        }
+
+        .btn {
+            height: 30px;
+            width: 100px;
+        }
+        #m {
+            
+            margin-right: 50px;
+        }
+        #userId {
+            margin-left: 65px;
+        }
+        #userPw {
+            margin-left: 50px;
+        }
+        #checkPw {
+            margin-left: 11px;
+        }
+        #name {
+            margin-left: 80px;
+        }
+        #email {
+            margin-left: 65px;
+        }
+        #hobby {
+            margin-left: 80px;
+        }
+
+    </style>
+    
+   
+</head>
+<body>
+    <table>
+        <caption><h3>회원가입</h3></caption>
+
+        <tr>
+            <td colspan="2">* 아이디 : <input type="text" id="userId"> <br><br>
+                &emsp;첫글자는 반드시 영문자하고 영문자, 숫자 포함 총4~12자로 입력하시오. <br><br></td>
+        </tr>
+        <tr>
+            <td>* 비밀번호 : <input type="password"id=userPw> <br><br>
+                &emsp;영문자, 숫자, 특수문자로 총 8~15자로 입력하시오. <br><br></td>
+        </tr>
+        <tr>
+            <td>
+                * 비밀번호 확인 : <input type="password" id="checkPw"><br><br>
+            
+                &emsp;위의 비밀번호와 일치하게 입력하시오.<br><br></td>
+        </tr>
+        <tr>
+            <td> * 이름 : <input type="text" id="name"><br><br>
+
+                &emsp;한글로만 이루어져 있어야 되며 2글자 이상으로 입력하시오.<br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>* 이메일 : <input type="text" id="email"><br><br>
+
+                &emsp;이메일 형식에 맞춰 입력하시오.<br></td>
+        </tr>
+        <tr>
+            <td>
+                * 취미 : <input type="text" id="hobby"><br></td>
+        </tr>
+        <tr>
+            <td>  * 거주지 : <select name="locaition" id="lo">
+                <option value="서울">서울</option>
+              </select></td>
+        </tr>
+        <tr>
+            <td><hr></td>
+        </tr>
+        <tr>
+            <td id="bt">
+                <button id="m" class="btn" onclick="test();">회원가입</button>
+                <button id="c" class="btn">취소</button>
+                <script>
+                function test(userId) {
+                   // 1. 영문자로 시작 & 영문, 숫자로만 구성된 4~12글자
+                      const regex = /^[a-z][a-z0-9]{3,11}$/i;
+
+                         if (regex.test(userId)) {
+                               return true; 
+                          } else {
+                            alert('아이디 형식이 틀렸습니다.');
+                     }
+                 }
+
+                 function test(userPw) {
+                    // 2. 영문자, 숫자, 특수문자로 총 8~15자로 입력하시오.
+
+                    const regex = /[a-zA-Z0-9~!@#$%^&*(){8,15}]/;
+                    if (regex.test(userPw)) {
+                               return true; 
+                          } else {
+                            alert('비밀번호 형식이 틀렸습니다.');
+                     }
+                 }
+                   // 비밀번호 일치 여부 체크
+              if (userPw !== checkPw) {
+                alert('비밀번호가 일치하지 않습니다.');
+                checkPwInput.value = ''; // 비밀번호 확인창 비우기
+                checkPwInput.focus(); // 다시 입력할 수 있도록 포커스 이동
+                return false; // 비밀번호가 다르면 제출X
+              }
+
+                function test(name) {
+                    const regex = /^[가-힣]+$/;
+                    if (regex.test(name)) {
+                               return true; 
+                          } else {
+                            alert('이름 다시');
+                     }
+                 }
+
+
+
+                </script>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--     
+    <table border="1">
+        <caption>회원가입</caption>
+    * 아이디 : <input type="text" id="userId"> <br>
+
+    첫글자는 반드시 영문자하고 영문자, 숫자 포함 총4~12자로 입력하시오. <br>
+
+    * 비밀번호 : <input type="password"id=userPw> <br>
+
+    영문자, 숫자, 특수문자로 총 8~15자로 입력하시오. <br>
+
+    * 비밀번호 확인 : <input type="password" id="checkPw"><br>
+
+    위의 비밀번호와 일치하게 입력하시오.<br>
+
+    * 이름 : <input type="text" id="name"><br>
+
+    한글로만 이루어져 있어야 되며 2글자 이상으로 입력하시오.<br>
+
+    * 이메일 : <input type="text" id="email"><br>
+
+    이메일 형식에 맞춰 입력하시오.<br>
+
+    * 취미 : <input type="text" id="hobby"><br>
+    
+    * 거주지 : <select name="locaition" id="lo">
+                <option value="서울">서울</option>
+              </select>
+    
+    </table>
+       -->
+    
+
+  
+ 
+</body>
+</html>
