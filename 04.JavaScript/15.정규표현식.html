@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규표현식</title>
+</head>
+<body>
+    <h1>정규표현식</h1>
+    <h3>* 정규표현식 객체 생성 및 정규표현식과 관련된 메서드</h3>
+    <button onclick="test1();">확인</button>
+    <div id="div1" class="area"></div>
+
+    <script>
+        function test1() {
+            const area1 = document.getElementById('area1');
+            const str1 = 'javascript jquery ajax';
+            const str2 = 'java oracle html css';
+
+            // 정규표현식 객체 생성 == 정규식 변수를 선언
+            // => 검색조건으로 삼고자하는 문자열 또는 특정패턴을 만들어 줌
+            // 방법 1
+            const regExp = new RegExp|('script');
+            // 방법 2
+            const regExp2 = /script/;
+
+            console.log(regExp);
+            console.log(regExp2);
+        }
+    </script>
+    
+</body>
+</html>
